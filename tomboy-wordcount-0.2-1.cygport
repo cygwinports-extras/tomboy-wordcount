@@ -1,0 +1,17 @@
+inherit mono
+
+
+HOMEPAGE="http://www.proven-corporation.com/software/tomboy-wordcount/"
+SRC_URI="http://www.proven-corporation.com/~jhs/${P}.tar.gz"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake Wordcount.dll
+}
+
+src_install() {
+	cd ${B}
+	insinto $(pkg-config --variable=addinsdir tomboy-addins)
+	doins Wordcount.dll
+}

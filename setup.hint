@@ -1,0 +1,6 @@
+category: Gnome
+requires: mono mono-gtk-sharp2.0 tomboy
+sdesc: "Tomboy wordcount plugin"
+ldesc: "Tomboy-Wordcount is a Tomboy plugin (or 'addin') which will 
+count the lines, words, and characters in a note, much like the Unix 
+'wc' (word count) tool."
